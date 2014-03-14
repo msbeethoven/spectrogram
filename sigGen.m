@@ -1,6 +1,6 @@
 %seori sachs
 %ss5413
-%3.12.14
+%3.14.14
 
 
 function output = sigGen (signal, frequency, duration, numOT, sampleRate, fileName) 
@@ -46,7 +46,7 @@ switch signal
         output = squareGen( frequency, duration, numOT, sampleRate, 0);
         % then if you want square wave, type 'square'
     case ('cosine')
-        output = cosGen( frequency, duration, numOT, sampleRate, pi/2);
+        output = cosGen( frequency, duration, sampleRate);
         % then if you want cosine wave, type 'cosine'
     case {'white noise', 'white', 'noise'}
         output = noiseGen (duration, sampleRate);

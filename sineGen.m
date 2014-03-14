@@ -19,9 +19,8 @@ function signal = sineGen (frequency, duration, samplingRate, phase)
     end
     plot(signal) 
     %plot
-    soundsc(signal, samplingRate)
+    %soundsc(signal, samplingRate)
     %sine sound
    
 end 
 
-%use this 3

@@ -1,4 +1,5 @@
 function output = sawGen( frequency, duration, numOT, sampleRate, phase)
+% start of sawtooth wave generator with  5 arguments
     
     output = sineGen(frequency, duration, sampleRate, phase); 
     % important to have the sineGen in the same folder
@@ -18,9 +19,8 @@ function output = sawGen( frequency, duration, numOT, sampleRate, phase)
  
      
     end
-soundsc(output, sampleRate)
+%soundsc(output, sampleRate)
 plot(output);   
     
 end 
 
-%use this

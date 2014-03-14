@@ -1,4 +1,5 @@
 function output = squareGen( frequency, duration, numOT, sampleRate, phase)
+% start of square wave generator with  5 arguments
     
     output = sineGen(frequency, duration, sampleRate, phase); 
     % important to have the sineGen in the same folder

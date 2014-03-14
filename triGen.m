@@ -1,4 +1,5 @@
 function output = triGen( frequency, duration, numOT, sampleRate, phase)
+% start of triangle wave generator with  5 arguments
     
     output = sineGen(frequency, duration, sampleRate, phase); 
     % important to have the sineGen in the same folder
@@ -20,7 +21,7 @@ function output = triGen( frequency, duration, numOT, sampleRate, phase)
         % negative summation 
 
     end
-soundsc(output, sampleRate)
+%soundsc(output, sampleRate)
 plot(output);   
     
 end 
