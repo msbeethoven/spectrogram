@@ -25,4 +25,3 @@ plot(output);
     
 end 
 
-%use this
