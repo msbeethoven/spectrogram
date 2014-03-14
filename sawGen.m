@@ -3,7 +3,7 @@ function output = sawGen( frequency, duration, numOT, sampleRate, phase)
     output = sineGen(frequency, duration, sampleRate, phase); 
     % important to have the sineGen in the same folder
     figure(1);
-    %pause
+    pause
 
     for overtoneNum = 1:numOT
         % will be executed 1 to as many overtones inputed

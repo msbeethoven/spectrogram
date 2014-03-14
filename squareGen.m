@@ -15,13 +15,10 @@ function output = squareGen( frequency, duration, numOT, sampleRate, phase)
         output = output + overtone; 
         figure(1);
         plot(output);
-        %xlim ([0, 1/frequency*2]) %zoom in
+        
         pause
     end
-    soundsc(output, sampleRate)
+    %soundsc(output, sampleRate)
     
 end 
 
-%use this
-% and need to put % at the end of argument to not have it spit out all the
-% plots 

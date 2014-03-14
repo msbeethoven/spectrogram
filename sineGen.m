@@ -24,4 +24,4 @@ function signal = sineGen (frequency, duration, samplingRate, phase)
    
 end 
 
-%use this 
+%use this 3
