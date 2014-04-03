@@ -4,9 +4,10 @@ function stftMatrix = spectrumAnalyzer(audioFilename, windowLength, hopSize, win
 
 audioFilename = audioread(audioFilename);
 
-%how many rows and columns to tell if file is stereo or mono
+%determination of mono or stereo 
 channelSize = size (audioFilename);
-%does file have two channels?
+%if the channel is stereo, produce a comma seperated list in order to make
+%it mono 
 if channelSize(2) == 2
   stereo = audioFilename(:,1) + audioFilename (:,2);
   audioFilename = stereo ./ 2;
@@ -81,32 +82,4 @@ imagesc(stftMatrix);
 
 
 end
-    
-        
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
 
