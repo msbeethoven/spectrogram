@@ -89,15 +89,9 @@ while start + windowLength - 1 <= length(audioFilename)
    start = start + hopSize;
    columnNum = columnNum +1;
    
-   
-
+  
 end
-
 
 imagesc(stftMatrix);
 
-
-
-
 end
-
