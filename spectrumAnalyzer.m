@@ -3,7 +3,7 @@
 
 function stftMatrix = spectrumAnalyzer(audioFilename, windowLength, hopSize, windowType)
 
-%put a short wav file in the directory of this to call upon
+%put a short wav file in the directory for this to call upon
 %'hanning' = hanning
 %'hamming' = hamming 
 %'blackman' = blackman 
